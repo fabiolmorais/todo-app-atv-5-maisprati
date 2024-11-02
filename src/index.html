@@ -8,25 +8,18 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="bg-slate-950 text-white">
-  <div class="max-w-7xl h-screen m-auto p-6 ">
+  <div class="max-w-7xl h-screen m-auto p-6" id="app">
     <header class="h-16 flex justify-center items-center border-b-2 border-solid border-slate-800">
       <h1 class="text-3xl font-bold mt-2 mb-3.5">ToDoList App</h1>
     </header>
-    <div class="input my-8 flex justify-center items-center gap-1">
-      <input type="text" placeholder="Adicione uma tarefa" class="w-full bg-transparent	border border-slate-800 py-3.5 px-4 rounded-2xl text-white text-base outline-none">
-      <button class="bg-transparent font-bold border border-slate-800 py-3.5 px-8 rounded-2xl cursor-pointer text-white transition ease-linear delay-100 hover:bg-green-700 hover:scale-105 hover:-translate-y-1 hover:border-none duration-150">Adicionar</button>
+    <div class="my-8 flex justify-center items-center gap-1" id="input-div">
+      <input id="input" type="text" placeholder="Adicione uma tarefa" class="w-full bg-transparent	border border-slate-800 py-3.5 px-4 rounded-2xl text-white text-base outline-none">
+      <button id="buttonInput" class="bg-transparent font-bold border border-slate-800 py-3.5 px-8 rounded-2xl cursor-pointer text-white transition ease-linear delay-100 hover:bg-green-700 hover:scale-105 hover:-translate-y-1 hover:border-none duration-150">Adicionar</button>
     </div>
-    <ul class="list-none bg-slate-900 p-4 rounded-lg">
-      <li class="flex items-center">
-        <label for="tasks" class="w-full flex items-center gap-4 text-xl">
-          <input type="checkbox" class="w-8 h-8">
-          <span>Teste</span>
-        </label>
-        <button class="py-3.5 px-8 border mr-1 bg-transparent font-bold border-slate-800 py-3.5 px-8 rounded-2xl cursor-pointer text-white transition ease-linear delay-100 hover:bg-yellow-400 hover:text-slate-800 hover:scale-105 hover:-translate-y-1 hover:border-none duration-150">Editar</button>
-        <button class="py-3.5 px-8 bg-transparent font-bold border border-slate-800 py-3.5 px-8 rounded-2xl cursor-pointer text-white transition ease-linear delay-100 hover:bg-red-700  hover:scale-105 hover:-translate-y-1 hover:border-none duration-150">Deletar</button>
-      </li>
+    <ul id="ul" class="list-none bg-slate-900 p-4 rounded-lg">  
     </ul>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
